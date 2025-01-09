@@ -153,7 +153,7 @@ document.getElementById('officialSiteButton').addEventListener('click', () => {
 
 document.getElementById('downloadPDFButton').addEventListener('click', () => {
     // رابط تحميل PDF
-    const fileUrl = 'https://smallpdf-production-files.0eb7351a55248d53ef0d306ef341ddfd.r2.cloudflarestorage.com/43cda4d0dc88457b36d54c56275b870b.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=233e3f4276e9a9d218be498fbe2a10dc%2F20250109%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20250109T035336Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&response-content-disposition=&response-content-type=application%2Fpdf&x-id=GetObject&X-Amz-Signature=46c4b3c46f01b5dbfc6d9f460ef5612a0acd74eedbec9296d2131fc0b34937f1';
+    const fileUrl = 'https://storage6.fastupload.io/588a8fd4a257aff1/mycv_.pdf?download_token=6ab9324babf4a3c6f93f25bebfb9d2b4af3b6c86b257a353bb599867f1c34b3e';
     
     // فتح الملف في نافذة جديدة
     window.open(fileUrl, '_blank');
