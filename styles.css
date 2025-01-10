@@ -1,3 +1,80 @@
+/* الشاشات الكبيرة (للحواسيب المكتبية) */
+@media (min-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+    nav ul {
+        flex-direction: row;
+    }
+}
+
+/* الشاشات المتوسطة (الأجهزة اللوحية) */
+@media (max-width: 1023px) and (min-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+/* الشاشات الصغيرة (الهواتف) */
+@media (max-width: 767px) {
+    body {
+        font-size: 12px;
+    }
+    nav ul {
+        flex-direction: column;
+        display: none; /* لإخفاء القائمة وجعلها منسدلة */
+    }
+    nav ul.show {
+        display: flex; /* عرض القائمة عند النقر على زر القائمة */
+    }
+}
+.profile-img {
+    max-width: 100%;
+    height: auto; /* ضمان الحفاظ على النسبة */
+    border-radius: 50%;
+}
+
+main {
+    width: 100%;
+    max-width: 800px;
+    padding: 2em;
+    margin: auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container {
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap; /* لضمان نقل العناصر عند ضيق العرض */
+    justify-content: center;
+    text-align: center;
+}
+
+nav ul {
+    flex-direction: column;
+    display: none;
+    background-color: #333; /* لون داكن لظهور أفضل */
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul.show {
+    display: flex;
+}
+
+#downloadPDFButton, #officialSiteButton, #whatsappButton, #facebookButton, #behanceButton {
+    position: relative;
+    margin: 10px 0; /* ترتيبها فوق بعضها عند تصغير الشاشة */
+    width: auto;
+}
+
+
 /* تنسيق صورة الملف الشخصي */
 .profile-container {
     display: flex;

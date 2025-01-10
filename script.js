@@ -153,10 +153,14 @@ document.getElementById('officialSiteButton').addEventListener('click', () => {
 
 document.getElementById('downloadPDFButton').addEventListener('click', () => {
     // رابط تحميل PDF
-    const fileUrl = 'https://storage6.fastupload.io/588a8fd4a257aff1/mycv_.pdf?download_token=6ab9324babf4a3c6f93f25bebfb9d2b4af3b6c86b257a353bb599867f1c34b3e';
+    const fileUrl = 'https://drive.google.com/file/d/1ADXNA5-Q4BTKSHprJNqDgaaVNyKQdBI9/view?usp=sharing';
     
     // فتح الملف في نافذة جديدة
     window.open(fileUrl, '_blank');
+});
+const nav = document.querySelector('nav ul');
+document.querySelector('nav').addEventListener('click', () => {
+    nav.classList.toggle('show');
 });
 
 // Language Switcher
